@@ -41,12 +41,8 @@ const createIncrementer = () => {
 };
 
 // return same argument not earlier than in one second, and not later, than in two
-const returnBackInSecond = (data) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(data)
-        }, 1100)
-    })
+const returnBackInSecond = () => {
+
 };
 const getDeepPropertiesCount = (arrData, count = 0) => {
     if (typeof arrData === 'object') {
